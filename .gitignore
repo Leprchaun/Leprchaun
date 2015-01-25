@@ -1,0 +1,8 @@
+/.sass-cache/
+/node_modules/
+/public/
+
+/config.json
+/debug.log
+/ssl.crt
+/ssl.key

@@ -1,0 +1,43 @@
+{
+  "name": "leprchaun",
+  "version": "0.0.1",
+  "description": "MoneyPot companion site",
+  "homepage": "https://leprchaun.io",
+  "author": "Philip Maes <maes@leprchaun.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leprchaun/leprchaun"
+  },
+  "bugs": "https://github.com/leprchaun/leprchaun/issues",
+  "private": "true",
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "scripts": {
+    "watch": "watchify client.js -o public/bundle.js -v",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "dependencies": {
+    "express": "4.11.x",
+    "express-handlebars": "1.1.x",
+    "mariasql": "0.1.x",
+    "moment": "2.9.x",
+    "moneypot": "0.1.x",
+    "node-jsx": "0.12.x",
+    "react": "0.12.x",
+    "react-bootstrap": "0.13.x",
+    "sequelize": ">= 2.0.0-rc7",
+    "socket.io": "1.2.x",
+    "winston": "0.8.x"
+  },
+  "devDependencies": {
+    "browserify": "8.1.x",
+    "reactify": "0.17.x",
+    "watchify": "2.2.x"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

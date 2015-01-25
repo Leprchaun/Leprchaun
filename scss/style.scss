@@ -1,0 +1,109 @@
+@import "compass/utilities/general/clearfix";
+
+#footer {
+  background-color: #F5F5F5;
+  height: 60px;
+  text-align: right;
+  line-height: 60px;
+  position: fixed;
+  bottom: 0;
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+
+thead, tbody, tr, th, td {
+  display: block;
+}
+
+tbody,
+ol {
+  height: 500px;
+  overflow-y: auto;
+}
+
+tr {
+  @include clearfix();
+}
+
+td, th {
+  width: 25%;
+  float: left;
+}
+
+th {
+  height: 30px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-top: 5px;
+  }
+  li:first-child {
+    margin-top: 0;
+  }
+}
+
+.chat-author {
+  font-weight: bold;
+}
+.chat-block,
+.chat-mute {
+  border-top: 1px solid #CCC;
+  margin-top: 10px;
+  padding-top: 10px
+}
+.chat-block:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.chat-say {
+  span {
+    display: block;
+  }
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.chat-mute {
+  text-align: center;
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+#game-verifications a,
+#chat-history a {
+  color: inherit;
+  &:hover,
+  &:active {
+    text-decoration: inherit;
+  }
+}
+
+@media (max-width: 991px) {
+  #chat-history {
+    margin-bottom: 60px;
+  }
+}
+
+#chat-history {
+  word-wrap: break-word;
+}
+
+#chat-history a.moderator {
+  color: navy;
+}
+#chat-history a.admin {
+  color: red;
+}
