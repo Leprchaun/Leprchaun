@@ -70,7 +70,18 @@ module.exports = React.createClass({
           </Row>
         </div>
         <Col xs={12} id='footer'>
-          <ConnectionStatus status={this.state.connectionStatus} />
+          <Row>
+            <Col xs={4} className='text-left github'>
+              <img src='/github.svg' />
+              <a href='https://github.com/Leprchaun/Leprchaun' target='_blank'>Source Code</a>
+            </Col>
+            <Col xs={4} className='text-center'>
+              <a href='https://insight.bitpay.com/address/12WdcxkQDjpTgMx55WgyLszELXZtVou3Ee' target='_blank'>Donations</a>
+            </Col>
+            <Col xs={4}>
+              <ConnectionStatus status={this.state.connectionStatus} />
+            </Col>
+          </Row>
         </Col>
       </div>
     );
