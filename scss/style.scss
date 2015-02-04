@@ -82,12 +82,12 @@ ol {
   }
 }
 
-#game-verifications a,
-#chat-history a {
+a {
   color: inherit;
   &:hover,
   &:active {
     text-decoration: inherit;
+    color: inherit;
   }
 }
 
